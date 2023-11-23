@@ -6,7 +6,7 @@ import  { ResidanceCarousel } from '../../components/carousel/Carousel';
 class Home extends Component {
 render() {
 return (
-    <div>
+    <div >
         <Header/>
         <ResidanceCarousel/>
     </div>
