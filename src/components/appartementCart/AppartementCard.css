@@ -1,0 +1,22 @@
+.appart-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  color: bisque;
+  width: 300px;
+  height: 250px;
+}
+
+.card-title {
+  font-family: "";
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.description {
+  font-family: "";
+  font-size: 18px;
+  font-weight: 100;
+  color: grey;
+}
