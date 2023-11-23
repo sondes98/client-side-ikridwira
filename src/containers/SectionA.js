@@ -1,12 +1,16 @@
 import React from 'react'
 import { AppartementCard } from '../components/appartementCart/AppartementCard'
+import "./containers.css"
 
 export const SectionA = () => {
   return (
-    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evently" , padding:"100px"}}>
+
+    <div>
+      <div className="section2">
+        <h1 className='sect-title'> CHOOSE YOUR Appartement </h1>
+      </div>
         <AppartementCard/>
-        <AppartementCard/>
-        <AppartementCard/>
+
     </div>
   )
 }

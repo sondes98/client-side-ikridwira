@@ -24,7 +24,7 @@ export const Header = () => {
                             activeStyle={{ fontWeight: "bold" }}
                             style={{}}
                         >
-                            Contact
+                            about
                         </NavLink>
                     </li>
                     <li>

@@ -1,22 +1,31 @@
 .appart-container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  color: bisque;
-  width: 300px;
-  height: 250px;
+
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f1f0;
+    box-shadow: 0px 0px 51px #8080807a;
 }
 
 .card-title {
-  font-family: "";
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
+    padding: 10px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
 }
 
 .description {
-  font-family: "";
-  font-size: 18px;
-  font-weight: 100;
-  color: grey;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: grey;
 }
+.container1 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 97%;
+    justify-content: center;
+  }
