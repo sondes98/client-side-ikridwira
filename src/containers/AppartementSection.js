@@ -2,7 +2,7 @@ import React from 'react'
 import { AppartementCard } from '../components/appartementCart/AppartementCard'
 import "./containers.css"
 
-export const SectionA = () => {
+export const AppartementSection = () => {
   return (
 
     <div>
