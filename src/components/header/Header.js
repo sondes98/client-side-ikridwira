@@ -9,7 +9,7 @@ export const Header = () => {
                 <ul className="menu" style={{}}>
                     <li>
                         <NavLink
-                            to="/home"
+                            to="/"
                             tag={Link}
                             activeStyle={{ fontWeight: "bold" }}
                             style={{}}
@@ -19,17 +19,17 @@ export const Header = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/home"
+                            to="/announces"
                             tag={Link}
                             activeStyle={{ fontWeight: "bold" }}
                             style={{}}
                         >
-                            about
+                            announces
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to="/home"
+                            to="/"
                             tag={Link}
                             activeStyle={{ fontWeight: "bold" }}
                             style={{}}

@@ -6,7 +6,6 @@
     height: 430px;
 }
 .explore {
-  
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -17,14 +16,13 @@
 
 }
 .contact {
+    flex-direction: column;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 385px;
     height: 289px;
     padding: 50px;
-
-
 }
 
 .f-tit {
