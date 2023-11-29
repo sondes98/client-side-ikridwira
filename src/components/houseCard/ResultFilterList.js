@@ -65,9 +65,11 @@ const ResultFilterList = () => {
         <div style={{ width: '90%', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
           <h1 style={{ textAlign: 'center', color: '#333' }}>Filter your future house</h1>
           <FilterComponent onFilter={handleFilter} />
-    
+          <h1 style={{ textAlign: 'center', color: '#333' }}>Available houses in this moment !</h1>
+
           {/* Display the filtered results or a message */}
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+
             {filteredHouses && filteredHouses.length > 0 ? (
               filteredHouses.map((house) => (
                 <HouseCard key={house.id} house={house} />
