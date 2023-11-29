@@ -10,6 +10,7 @@ const HouseCard = ({ house }) => {
   const [price, setPrice] = useState(house.price);
   const [area, setArea] = useState(house.area);
   const [composition, setComposition] = useState(house.composition);
+  
 
   return (
     <Card sx={{ maxWidth: 345 , margin:"20px" }}>
