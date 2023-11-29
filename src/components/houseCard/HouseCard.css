@@ -37,3 +37,19 @@
     background-color: #45a049;
   }
 }
+
+/* HouseCardList.css */
+
+/* Customize the carousel styles for different screen sizes */
+@media (max-width: 460px) {
+  .custom-carousel {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
+@media (min-width: 461px) {
+  .custom-carousel {
+    width: 100%; /* Full width for larger screens */
+  }
+}
+

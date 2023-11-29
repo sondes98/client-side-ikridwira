@@ -13,7 +13,7 @@ const HouseCard = ({ house }) => {
   
 
   return (
-    <Card sx={{ maxWidth: 345 , margin:"20px" }}>
+    <Card sx={{ maxWidth: 345 , margin:"20px" }} >
       <CardActionArea>
         <CardMedia
           component="img"
