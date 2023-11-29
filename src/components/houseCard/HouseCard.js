@@ -12,17 +12,17 @@ const HouseCard = ({ house }) => {
   const [composition, setComposition] = useState(house.composition);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 , margin:"20px" }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/Image11.jpg"
           alt="green iguana"
         />
         <CardContent>
           <Typography variant="h6">{name}</Typography>
-          <Typography variant="body2">Price: ${price}</Typography>
+          <Typography variant="body2">Price: {price}dnt</Typography>
           <Typography variant="body2">Area: {area}</Typography>
           <Typography variant="body2">Composition: {composition}</Typography>
         </CardContent>
