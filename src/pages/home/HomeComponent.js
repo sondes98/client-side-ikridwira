@@ -4,7 +4,6 @@ import  { ResidanceCarousel } from '../../components/carousel/Carousel';
 import FooterSection from '../../containers/FooterSection';
 import { AppartementSection } from '../../containers/AppartementSection';
 import { AnnouceContainer } from '../../containers/AnnouceContainer';
-import { HouseCardList } from '../../components/houseCard/HouseCardList';
 
 class Home extends Component {
 render() {

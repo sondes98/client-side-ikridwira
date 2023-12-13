@@ -1,9 +1,27 @@
-.s-f {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-    height: 430px;
+
+@media (min-width: 48em) {
+    .s-f {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 430px;
+    }
+    .explore {
+
+        display: block;
+        width: 150px;
+        height: 289px;
+        padding: 10px;
+    
+    
+    }
+    .contact {
+        display: block;
+        width: 180px;
+        height: 289px;
+        padding: 10px;
+    }
 }
 .explore {
     justify-content: space-between;

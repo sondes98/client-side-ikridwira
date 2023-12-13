@@ -34,23 +34,23 @@ export default function PriceSlider({ priceRange, onChange }) {
         sx={{
           "& span.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-sizeMedium.css-1g8npcy-MuiSlider-root":
             {
-              backgroundColor: "#D8BE96", // Customize thumb color
+              backgroundColor: "#D8BE96",
               border: " 1px solid #D8BE96",
             },
           "& .MuiSlider-thumb": {
-            backgroundColor: "#D8BE96", // Customize thumb color
-            transition: "background-color 0.3s ease", // Add a smooth transition
+            backgroundColor: "#D8BE96",
+            transition: "background-color 0.3s ease",
           },
           "& .MuiSlider-thumb:hover": {
-            backgroundColor: "rgba(216, 190, 150, 0.8)", // Transparent color on hover
-            boxShadow: "0px 0px 0px 8px #d8be9659", // Box shadow on hover
+            backgroundColor: "rgba(216, 190, 150, 0.8)",
+            boxShadow: "0px 0px 0px 8px #d8be9659", 
           },
           "& .MuiSlider-track": {
-            backgroundColor: "#D8BE96", // Customize track color
+            backgroundColor: "#D8BE96", 
             color: "D8BE96",
           },
           "& .MuiSlider-rail": {
-            backgroundColor: "#D8BE96", // Customize rail color
+            backgroundColor: "#D8BE96", 
             color: "D8BE96",
           },
         }}

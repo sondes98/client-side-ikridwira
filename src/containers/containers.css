@@ -20,6 +20,12 @@
     height: 500px;
 
 }
+@media (min-width: 48em) {
+    .footer-section{
+        bottom: 0;
+    }
+}
+
 .filter-section {
     padding: 10px;
     margin: 100px 0px 100px 0;

@@ -1,7 +1,5 @@
 import React from "react";
 import ResultFilterList from "../../components/houseCard/ResultFilterList";
-import { Header } from "../../components/header/Header";
-import FooterSection from "../../containers/FooterSection";
 
 const Announce = () => {
   return (

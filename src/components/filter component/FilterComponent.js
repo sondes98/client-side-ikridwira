@@ -20,7 +20,6 @@ const FilterComponent = ({ onFilter }) => {
     };
   
     const handleFilterClick = () => {
-      // Ensure that the filter criteria are correctly structured
       const filterCriteria = {
         priceRange: {
           min: parseFloat(priceRange.min),
@@ -30,7 +29,6 @@ const FilterComponent = ({ onFilter }) => {
         composition: selectedComposition,
       };
       console.log("Filter Criteria:", filterCriteria);
-      // Send the filter criteria to the parent component
       onFilter(filterCriteria);
     };
 

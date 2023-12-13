@@ -1,9 +1,9 @@
 import React from "react";
 import { Carousel } from "antd";
-import residance1 from "../../images/residance1.png";
-import residance2 from "../../images/residance2.png";
-import residance3 from "../../images/residance3.png";
-import group1 from "../../images/Group-1.png";
+import residance1 from "../../assets/images/residance1.png";
+import residance2 from "../../assets/images/residance2.png";
+import residance3 from "../../assets/images/residance3.png";
+import group1 from "../../assets/images/Group-1.png";
 import "./Carousel.css";
 
 export const ResidanceCarousel = () => {
@@ -24,9 +24,8 @@ export const ResidanceCarousel = () => {
     borderRadius: "5px",
   };
 
-  // Apply specific styles for smaller screens
   if (viewportWidth <= 1000 && viewportWidth >= 300) {
-    h1Styles.marginTop = "-357px"; // Adjust the margin for smaller screens
+    h1Styles.marginTop = "-357px"; 
     h1Styles.marginLeft = "76px";
     h1Styles.fontSize = "22px";
   }

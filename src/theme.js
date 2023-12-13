@@ -1,4 +1,3 @@
-// theme.js
 export const blueTheme = {
   body: "#EDF9FE",
   text: "#001C55",

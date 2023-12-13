@@ -27,19 +27,16 @@ export const HouseCardList = () => {
     { id: 19, price: 3000, area: "Area 4", composition: "s+1" },
     { id: 20, price: 1600, area: "Area 1", composition: "s+2" },
     { id: 21, price: 2100, area: "Area 3", composition: "s0" },
-
-    // Add more houses as needed
   ];
   const settings = {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 2, // Adjust the number of slides displayed at a time
+    slidesToShow: 2, 
     slidesToScroll: 1,
-    autoplay: true,           // Enable automatic scrolling
+    autoplay: true,           
     autoplaySpeed: 2000, 
-    cssEase: "ease", // Add smooth scroll effect
-
+    cssEase: "ease",
   };
   const responsiveSettings = [
     {
@@ -59,17 +56,13 @@ export const HouseCardList = () => {
       settings: {
         slidesToShow: 1,
         dots: false,
-
       },
     },
   ];
-  
-
   return (
     <Slider {...settings} responsive={responsiveSettings} style={{margin:"50px"}}>
       {initialHouses.map((house) => (
         <div key={house.id}>
-          {/* Use your HouseCard component to display each house */}
           <HouseCard key={house.id} house={house} />
         </div>
       ))}
