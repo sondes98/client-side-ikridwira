@@ -1,0 +1,22 @@
+[
+  { "id": 1, "price": 500, "governorate": "ARIANA", "delegation": "ARIANA VILLE", "composition": "s+1" },
+  { "id": 2, "price": 3000, "governorate": "TUNIS", "delegation": "TUNIS VILLE", "composition": "s+2" },
+  { "id": 3, "price": 1000, "governorate": "ARIANA", "delegation": "ARIANA VILLE", "composition": "s+1" },
+  { "id": 4, "price": 2514, "governorate": "MANOUBA", "delegation": "MANOUBA VILLE", "composition": "s+1" },
+  { "id": 5, "price": 1400, "governorate": "BIZERTE", "delegation": "BIZERTE NORD", "composition": "s0" },
+  { "id": 6, "price": 1800, "governorate": "SFAX", "delegation": "SFAX VILLE", "composition": "s+2" },
+  { "id": 7, "price": 1200, "governorate": "GABES", "delegation": "GABES VILLE", "composition": "s0" },
+  { "id": 8, "price": 2200, "governorate": "TUNIS", "delegation": "LA MARSA", "composition": "s+1" },
+  { "id": 9, "price": 1600, "governorate": "NABEUL", "delegation": "HAMMAMET", "composition": "s+2" },
+  { "id": 10, "price": 2000, "governorate": "SOUSSE", "delegation": "SOUSSE VILLE", "composition": "s+1" },
+  { "id": 11, "price": 3500, "governorate": "KAIROUAN", "delegation": "KAIROUAN NORD", "composition": "s+2" },
+  { "id": 12, "price": 900, "governorate": "JENDOUBA", "delegation": "JENDOUBA NORD", "composition": "s0" },
+  { "id": 13, "price": 2800, "governorate": "ZAGHOUAN", "delegation": "ZAGHOUAN VILLE", "composition": "s+1" },
+  { "id": 14, "price": 1700, "governorate": "KASSERINE", "delegation": "KASSERINE SUD", "composition": "s+2" },
+  { "id": 15, "price": 1300, "governorate": "TOZEUR", "delegation": "TOZEUR SUD", "composition": "s0" },
+  { "id": 16, "price": 2400, "governorate": "MAHDIA", "delegation": "MAHDIA VILLE", "composition": "s+1" },
+  { "id": 17, "price": 1900, "governorate": "BEJA", "delegation": "BEJA VILLE", "composition": "s+2" },
+  { "id": 18, "price": 1100, "governorate": "GAFSA", "delegation": "GAFSA VILLE", "composition": "s0" },
+  { "id": 19, "price": 3000, "governorate": "SIDI BOUZID", "delegation": "SIDI BOUZID NORD", "composition": "s+1" },
+  { "id": 20, "price": 1600, "governorate": "MEDENINE", "delegation": "MEDENINE SUD", "composition": "s+2" }
+]

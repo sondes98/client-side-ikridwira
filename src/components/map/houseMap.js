@@ -33,7 +33,7 @@ const HouseMap = () => {
         <MapContainer
             center={[34.8334421, 9.5357442]}
             zoom={5}
-            style={{ width: '400px', height: '400px', margin: "50px auto" }}
+            style={{ width: '320px', height: '370px', }}
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

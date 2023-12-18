@@ -1,58 +1,73 @@
+// FilterComponent.js
 import React, { useState } from 'react';
 import "./filter.css";
 import PriceSlider from './PriceSlider';
+import GovernorateDropdown from './GovernorateDropdown';
+import DelegationDropdown from './DelegationDropdown';
+import CompositionDropdown from './CompositionDropdown';  // Import the new component
+import tunisiaData from '../../tunisia.json';
 
 const FilterComponent = ({ onFilter }) => {
     const [priceRange, setPriceRange] = useState({ min: 0, max: 5000 });
-    const [selectedArea, setSelectedArea] = useState('');
-    const [selectedComposition, setSelectedComposition] = useState('');
-  
+    const [selectedGovernorate, setSelectedGovernorate] = useState('');
+    const [selectedDelegation, setSelectedDelegation] = useState('');
+    const [selectedComposition, setSelectedComposition] = useState(''); 
+
     const handlePriceChange = (newValue) => {
-      setPriceRange({ min: newValue[0], max: newValue[1] });
+        setPriceRange({ min: newValue[0], max: newValue[1] });
     };
-  
-    const handleAreaChange = (e) => {
-      setSelectedArea(e.target.value);
+
+    const handleGovernorateChange = (e) => {
+        const selectedGovernorate = e.target.value;
+        setSelectedGovernorate(selectedGovernorate);
+        setSelectedDelegation('');
     };
-  
+
+    const handleDelegationChange = (e) => {
+        setSelectedDelegation(e.target.value);
+    };
+
     const handleCompositionChange = (e) => {
-      setSelectedComposition(e.target.value);
+        setSelectedComposition(e.target.value);
     };
-  
+
     const handleFilterClick = () => {
-      const filterCriteria = {
-        priceRange: {
-          min: parseFloat(priceRange.min),
-          max: parseFloat(priceRange.max),
-        },
-        area: selectedArea,
-        composition: selectedComposition,
-      };
-      console.log("Filter Criteria:", filterCriteria);
-      onFilter(filterCriteria);
+        const filterCriteria = {
+            priceRange: {
+                min: parseFloat(priceRange.min),
+                max: parseFloat(priceRange.max),
+            },
+            governorate: selectedGovernorate,
+            delegation: selectedDelegation,
+            composition: selectedComposition,  
+        };
+        console.log("Filter Criteria:", filterCriteria);
+        onFilter(filterCriteria);
     };
 
     return (
         <div className='cont'>
-            <label htmlFor="minPrice">fix the price</label>
+            <label htmlFor="minPrice">Fix the price</label>
             <PriceSlider priceRange={priceRange} onChange={handlePriceChange} />
-            <label htmlFor="area">Area:</label>
-            <select id="area" value={selectedArea} onChange={handleAreaChange}>
-                <option value="">Select an Area</option>
-                <option value="area 1">Area 1</option>
-                <option value="area 2">Area 2</option>
-                {/* Add more area options as needed */}
-            </select>
-            <label htmlFor="composition">Composition:</label>
-            <select id="composition" value={selectedComposition} onChange={handleCompositionChange}>
-                <option value="">Select a Composition</option>
-                <option value="s0">s0</option>
-                <option value="s+1">s+1</option>
-                <option value="s+2">s+2</option>
-                <option value="s+3">s+3</option>
-                <option value="&gt; s+2">&gt; s+2</option>
-                {/* Add more composition options as needed */}
-            </select>
+
+            <GovernorateDropdown
+                tunisiaData={tunisiaData}
+                selectedGovernorate={selectedGovernorate}
+                onChange={handleGovernorateChange}
+            />
+
+            <DelegationDropdown
+                tunisiaData={tunisiaData}
+                selectedGovernorate={selectedGovernorate}
+                selectedDelegation={selectedDelegation}
+                onChange={handleDelegationChange}
+            />
+
+            <CompositionDropdown  
+                selectedComposition={selectedComposition}
+                onChange={handleCompositionChange}
+            />
+
             <button onClick={handleFilterClick}>Apply Filter</button>
         </div>
     );

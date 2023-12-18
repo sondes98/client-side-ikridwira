@@ -1,0 +1,118 @@
+.image-gallery-container {
+    background-color: #d8be9645;
+    width: 100%;
+  margin: 0px auto;
+  padding: 16px;
+}
+
+.image-card {
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+.modal-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+/* Image Card */
+.image-card {
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.MuiDialog-paper {
+  margin: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 520px;
+  height: 554px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Modal Container */
+.modal-container {
+  position: relative;
+  z-index: 2; /* Ensure the modal container is above the background overlay */
+}
+
+/* Box with Background Filter */
+/* Box with Background Filter */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Close Button (X) */
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  color: #ccc;
+}
+.arrow-button {
+  height: 50px;
+  color: black;
+  margin-top: "259px";
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.arrow-button:hover {
+  color: #ccc;
+}
+
+/* Navigation Buttons */
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+/* Close Button in Navigation Buttons */
+.dialog-buttons .close-button {
+  color: #555;
+}
+/* Add hover styles for navigation buttons */
+/* .arrow-button:hover {
+    border-radius: 50px;
+    background-color: #f0f0ef80;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+
+  } */

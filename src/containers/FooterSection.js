@@ -12,7 +12,6 @@ const FooterSection = () => {
         <div className="highlights">
           <Footer />
         </div>
-
         <div className="copyright">
           <h1 className="footer-title"> all copyrights 2023 by OurTeam </h1>
         </div>

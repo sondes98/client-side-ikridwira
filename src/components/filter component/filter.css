@@ -55,9 +55,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #ba9967;
-}
+
 .cont{
     margin: 20px;
     padding: 20px;
