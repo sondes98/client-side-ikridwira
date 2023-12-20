@@ -1,0 +1,41 @@
+.list-details {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.list-details li {
+  list-style: none;
+  cursor: pointer;
+}
+.list-details li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sub-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-details li h6 {
+  color: #8a5911;
+  font-size: 14px;
+  width: 91px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.list-details li h5 {
+  margin: 5px;
+  color: #b3b1ae;
+  padding: 5px;
+  /* width: 155px; */
+  text-align: start;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}

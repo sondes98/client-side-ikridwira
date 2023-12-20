@@ -49,45 +49,70 @@ const ImageGallery = () => {
 
   return (
     <div className="image-gallery-container">
-      <Grid container spacing={2} style={{ width: "1000px", margin: "0 auto" }}>
-        {images.slice(0, showMore ? images.length : 3).map((image, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+      <Grid
+        container
+        spacing={2}
+        style={{ width: "885px", height: "373px", margin: "0 auto" }}
+      >
+        {images.slice(0, showMore ? images.length : 4).map((image, index) => (
+          <Grid item xs={7} sm={4} md={3} key={index}>
             <Card className="image-card" onClick={() => openModal(index)}>
               <CardMedia
                 component="img"
                 alt={`Image ${index + 1}`}
-                height="140"
                 image={image}
                 className="image"
               />
             </Card>
           </Grid>
         ))}
-        {!showMore && (
-          <Grid item xs={12}>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ backgroundColor: "#D8BE96" }}
-              onClick={() => setShowMore(true)}
-            >
-              See More
-            </Button>
-          </Grid>
-        )}
       </Grid>
-
+      {!showMore && (
+        <div>
+          <img
+            style={{
+              top: "440px",
+              position: "absolute",
+              left: "1208px",
+              margin: "8px",
+            }}
+            className="im-arrow"
+            src={
+              "https://themesflat.com/alipeskit/wp-content/uploads/2023/08/arrow.png"
+            }
+            alt="arrow"
+          />
+          <Button
+            variant="contained"
+            color="primary"
+            style={{
+              width: "176px",
+              boxShadow: "none",
+              borderRadius: "0px",
+              border: "none",
+              backgroundColor: "#73511e",
+              height: "37px",
+              top: -"63px",
+              left: "895px",
+              margin: "8px",
+            }}
+            onClick={() => setShowMore(true)}
+          >
+            See More
+          </Button>
+        </div>
+      )}
       {showMore && (
         <Dialog
-        open={selectedImage !== null}
-        onClose={() => setShowMore(false)}
-        maxWidth="md"
-        fullWidth
-        PaperProps={{ style: dialogPaperStyle }}
-        
+          open={selectedImage !== null}
+          onClose={() => setShowMore(true)}
+          maxWidth="md"
+          fullWidth
+          PaperProps={{ style: dialogPaperStyle }}
         >
           <div className="modal-container">
             <IconButton
+              style={{ left: "813px" }}
               className="close-button"
               onClick={() => setShowMore(false)}
             >

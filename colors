@@ -1,0 +1,11 @@
+    --e-global-color-primary: #221C13;
+    --e-global-color-secondary: #CD8C66;
+    --e-global-color-text: #827E78;
+    --e-global-color-accent: #F6F4F1;
+    --e-global-color-932fb72: #FFFFFF;
+    --e-global-color-67aa08b: #7A736A;
+    --e-global-color-a875a7d: #F5F3F0;
+    --e-global-color-92574f5: #EBE8E4;
+    --e-global-color-a619c0a: #1A150E;
+    --e-global-color-7b42abd: #282118;
+    --e-global-color-0f38791: #3E3830;
