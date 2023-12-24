@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Header } from '../../components/header/header';
 import  { ResidanceCarousel } from '../../components/carousel/Carousel';
-import FooterSection from '../../containers/footerSection';
 import { AppartementSection } from '../../containers/AppartementSection';
 import AnnouceContainer from '../../containers/annouceContainer';
+import FooterSection from '../../containers/footerSection';
 
 class Home extends Component {
 render() {
