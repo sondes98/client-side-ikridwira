@@ -8,7 +8,7 @@ import Layout from "../../components/laytout";
 
 
 const HousePage = () => {
-  const houseDetails = {
+  const houseDet = {
     surface: "360m",
     location: "tunis, ariana",
     bedroom: "2",
@@ -25,7 +25,7 @@ const HousePage = () => {
         <h1 className="tit-h1"> Home Details </h1>
       </div>
         <ImageGallery />
-        <HouseDetails details={houseDetails} />
+        <HouseDetails details={houseDet} />
         <ApartmentPlan />
         <HouseVideo videoUrl={videoUrl} />
     </Layout>
