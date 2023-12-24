@@ -56,7 +56,7 @@ const ImageGallery = () => {
         backgroundSize: "820px",
         backgroundRepeat: " no-repeat",
         backgroundPosition: "right",
-        position:"relative",
+        position: "relative",
         marginTop: "600px",
       }}
     >
@@ -146,7 +146,7 @@ const ImageGallery = () => {
                 </IconButton>
                 <img
                   src={images[selectedImage]}
-                  alt={`Image ${selectedImage + 1}`}
+                  alt="gallery"
                   className="modal-image"
                 />
                 <IconButton
