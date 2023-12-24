@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import PriceSlider from "./priceSlider";
-import GovernorateDropdown from "./governorateDropdown";
-import DelegationDropdown from "./delegationDropdown";
-import CompositionDropdown from "./compositionDropdown";
+import PriceSlider from "./PriceSlider";
+import GovernorateDropdown from "./GovernorateDropdown";
+import DelegationDropdown from "./DelegationDropdown";
+import CompositionDropdown from "./CompositionDropdown";
 import tunisiaData from "../../tunisia.json";
-import "./filter.css";
+import "./Filter.css";
 
 const FilterComponent = ({ onFilter }) => {
   const initialFilterState = {

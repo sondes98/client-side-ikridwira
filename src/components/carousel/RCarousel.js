@@ -6,7 +6,7 @@ import residance3 from "../../assets/images/residance3.png";
 import group1 from "../../assets/images/Group-1.png";
 import "./Carousel.css";
 
-export const ResidanceCarousel = () => {
+const RCarousel = () => {
   const viewportWidth = window.innerWidth;
 
   const h1Styles = {
@@ -25,7 +25,7 @@ export const ResidanceCarousel = () => {
   };
 
   if (viewportWidth <= 1000 && viewportWidth >= 300) {
-    h1Styles.marginTop = "-357px"; 
+    h1Styles.marginTop = "-357px";
     h1Styles.marginLeft = "76px";
     h1Styles.fontSize = "22px";
   }
@@ -57,4 +57,4 @@ export const ResidanceCarousel = () => {
   );
 };
 
-export default ResidanceCarousel;
+export default RCarousel;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FilterComponent from '../components/filter component/filterComponent';
+import FilterComponent from '../components/filterComponent/FilterComponent';
 import { useNavigate } from 'react-router';
 import jsonData from '../data.json';
 

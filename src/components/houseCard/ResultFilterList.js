@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HouseCard from "./HouseCard";
-import FilterComponent from "../filter component/filterComponent";
+import FilterComponent from "../filterComponent/FilterComponent";
 import jsonData from "../../data.json";
 
 const ResultFilterList = () => {

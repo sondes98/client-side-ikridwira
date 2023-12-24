@@ -1,10 +1,10 @@
 import React from "react";
+import Layout from "../../components/Layout";
 import ImageGallery from "../../components/imageHolder/ImageGallery";
-import "./HousePage.css";
-import ApartmentPlan from "components/houseDetails/ApartmentPlan";
-import HouseVideo from "../../components/houseDetails/HouseVideo";
-import Layout from "../../components/laytout";
 import HouseDetails from "../../components/houseDetails/HouseDetails";
+import ApartmentPlan from "../../components/houseDetails/ApartmentPlan";
+import HouseVideo from "../../components/houseDetails/HouseVideo";
+
 
 const HousePage = () => {
   const houseDet = {

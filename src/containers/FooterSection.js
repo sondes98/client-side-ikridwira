@@ -1,8 +1,8 @@
 import React from "react";
 import footer from "../assets/images//footer.png";
 
-import "./containers.css";
-import { Footer } from "../components/footer/footer";
+import "./Containers.css";
+import { Footer } from "../components/footer/Footer";
 
 const FooterSection = () => {
   return (

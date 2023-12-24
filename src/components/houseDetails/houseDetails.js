@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./houseDetails.css";
+import "./HouseDetails.css";
 
 const HouseDetails = ({ details }) => {
   const { surface, location, bedroom, kitchen, livingRoom, terrace, bathroom } =

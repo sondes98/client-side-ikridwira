@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Header } from "../../components/header/Header";
-import { Carousel } from "../../components/carousel/carousel";
-import { AppartementSection } from "../../containers/appartementSection";
-import AnnouceContainer from "../../containers/annouceContainer";
-import FooterSection from "../../containers/footerSection";
+import { AppartementSection } from "../../containers/AppartementSection";
+import AnnouceContainer from "../../containers/AnnouceContainer";
+import FooterSection from "../../containers/FooterSection";
+import RCarousel from "../../components/carousel/RCarousel";
 
 class Home extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Carousel />
+        <RCarousel />
         <AnnouceContainer />
         <AppartementSection />
         <FooterSection />

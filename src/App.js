@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import HouseMap from "./components/map/houseMap";
+import HouseMap from "./components/map/HouseMap";
 import fakeData from "./fakeData";
 import Announce from "./pages/announce/Announce";
 import HousePage from "./pages/house/HousePage";
