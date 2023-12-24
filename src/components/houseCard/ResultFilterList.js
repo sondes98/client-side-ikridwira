@@ -71,7 +71,7 @@ const ResultFilterList = () => {
       >
         {displayedHouses && displayedHouses.length > 0 ? (
           displayedHouses.map((house) => (
-            <HouseCard key={house.id} house={house} />
+            <HouseCard key={house.id} house={house}/>
           ))
         ) : (
           <div

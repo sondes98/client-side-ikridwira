@@ -56,6 +56,8 @@ const ImageGallery = () => {
         backgroundSize: "820px",
         backgroundRepeat: " no-repeat",
         backgroundPosition: "right",
+        position:"relative",
+        marginTop: "600px",
       }}
     >
       <Grid
