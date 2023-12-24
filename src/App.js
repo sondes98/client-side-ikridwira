@@ -3,8 +3,8 @@ import "./App.css";
 
 import HouseMap from "./components/map/houseMap";
 import fakeData from "./fakeData";
-import Announce from "./pages/announce/announce";
-import HousePage from "./pages/house/housePage";
+import Announce from "./pages/announce/Announce";
+import HousePage from "./pages/house/HousePage";
 import Home from "./pages/home/home";
 
 function App() {

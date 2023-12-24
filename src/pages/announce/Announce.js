@@ -1,5 +1,5 @@
 import React from "react";
-import ResultFilterList from "../../components/houseCard/resultFilterList";
+import ResultFilterList from "../../components/houseCard/ResultFilterList";
 import Layout from "../../components/laytout";
 import "./announce.css";
 
