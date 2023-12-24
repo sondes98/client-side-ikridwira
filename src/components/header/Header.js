@@ -12,32 +12,17 @@ export const Header = () => {
         </label>
         <ul className="menu">
           <li>
-            <NavLink
-              to="/"
-              tag={Link}
-              activeStyle={{ fontWeight: "bold" }}
-              style={{}}
-            >
+            <NavLink to="/" tag={Link}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/announces"
-              tag={Link}
-              activeStyle={{ fontWeight: "bold" }}
-              style={{}}
-            >
+            <NavLink to="/announces" tag={Link}>
               announces
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/"
-              tag={Link}
-              activeStyle={{ fontWeight: "bold" }}
-              style={{}}
-            >
+            <NavLink to="/" tag={Link}>
               Contact
             </NavLink>
           </li>

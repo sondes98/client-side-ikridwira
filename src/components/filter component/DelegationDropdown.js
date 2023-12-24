@@ -7,12 +7,12 @@ const DelegationDropdown = ({ selectedGovernorate, tunisiaData, selectedDelegati
 
     return (
         <div>
-            {selectedGovernorate && (
+            {selectedGovernorate && selectedGovernorateData && (
                 <>
                     <label htmlFor="delegation">Delegation:</label>
                     <select id="delegation" value={selectedDelegation} onChange={onChange}>
                         <option value="">Select a Delegation</option>
-                        {selectedGovernorateData?.Delegations.map((delegation) => (
+                        {selectedGovernorateData.Delegations.map((delegation) => (
                             <option key={delegation.Value} value={delegation.Value}>
                                 {delegation.Name}
                             </option>

@@ -42,7 +42,7 @@ export const HouseCardList = () => {
   ];
 
   return (
-    <Slider {...settings} responsive={responsiveSettings} style={{ margin: "50px" }}>
+    <Slider {...settings} responsive={responsiveSettings} style={{ margin: "50px"}}>
       {initialHouses.map((house) => (
         <div key={house.id}>
           <HouseCard key={house.id} house={house} />

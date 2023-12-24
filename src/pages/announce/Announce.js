@@ -1,11 +1,24 @@
 import React from "react";
 import ResultFilterList from "../../components/houseCard/ResultFilterList";
+import Layout from "../../components/laytout";
+import "./announce.css";
 
 const Announce = () => {
   return (
-    <div style={{ marginTop: "100px", marginBottom: "100px" }}>
-      <ResultFilterList />
-    </div>
+    <Layout>
+      <div>
+        <div className="background-announce">
+          {" "}
+          <h1 className="tit-h1"> choose your future home </h1>
+        </div>
+
+        <div style={{ background: "#221C134D" }} className="overlay"></div>
+      </div>
+
+      <div style={{ marginTop: "600px", marginBottom: "100px" }}>
+        <ResultFilterList />
+      </div>
+    </Layout>
   );
 };
 

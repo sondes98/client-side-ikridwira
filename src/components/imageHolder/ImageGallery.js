@@ -25,7 +25,7 @@ const ImageGallery = () => {
   const [showMore, setShowMore] = useState(false);
 
   const openModal = (index) => {
-    setSelectedImage(index);
+    setSelectedImage(index - 1);
     setShowMore(true);
   };
 
@@ -48,7 +48,16 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="image-gallery-container">
+    <div
+      className="image-gallery-container"
+      style={{
+        backgroundImage:
+          "url(https://themesflat.com/alipeskit/wp-content/uploads/2023/08/building-1.png)",
+        backgroundSize: "820px",
+        backgroundRepeat: " no-repeat",
+        backgroundPosition: "right",
+      }}
+    >
       <Grid
         container
         spacing={2}
@@ -96,7 +105,10 @@ const ImageGallery = () => {
               left: "895px",
               margin: "8px",
             }}
-            onClick={() => setShowMore(true)}
+            onClick={() => {
+              setShowMore(true);
+              openModal(true);
+            }}
           >
             See More
           </Button>
@@ -114,7 +126,10 @@ const ImageGallery = () => {
             <IconButton
               style={{ left: "813px" }}
               className="close-button"
-              onClick={() => setShowMore(false)}
+              onClick={() => {
+                setShowMore(false);
+                closeModal(true);
+              }}
             >
               <CloseIcon />
             </IconButton>

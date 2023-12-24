@@ -1,64 +1,76 @@
 import React, { useState, useEffect } from "react";
 import HouseCard from "./HouseCard";
-import FilterComponent from "../filter component/FilterComponent";
-import jsonData from "../../data.json"; // Import the JSON data
+import FilterComponent from "../filter component/filterComponent";
+import jsonData from "../../data.json";
 
 const ResultFilterList = () => {
-  // Use the data from jsonData
   const initialHouses = jsonData;
 
   const [filteredHouses, setFilteredHouses] = useState(initialHouses);
+  const [displayedHouses, setDisplayedHouses] = useState([]);
+  const [showMore, setShowMore] = useState(false);
+
   const handleFilter = (filterCriteria) => {
-    const { priceRange, governorate, delegation, composition } = filterCriteria;
-  
-    const filteredByPrice = initialHouses.filter((house) => {
-      const priceInRange =
-        (!priceRange.min || house.price >= parseFloat(priceRange.min)) &&
-        (!priceRange.max || house.price <= parseFloat(priceRange.max));
-  
-      return priceInRange;
-    });
-  
-    const filteredByGovernorate = governorate
-      ? filteredByPrice.filter((house) => house.governorate === governorate)
-      : filteredByPrice;
-  
-    const filteredByDelegation = delegation
-      ? filteredByGovernorate.filter((house) => house.delegation === delegation)
-      : filteredByGovernorate;
-  
-    const filteredByComposition = composition
-      ? filteredByDelegation.filter((house) => house.composition === composition)
-      : filteredByDelegation;
-  
-    setFilteredHouses(filteredByComposition);
+    // Apply your filtering logic based on filterCriteria
+    let filteredData = initialHouses;
+
+    if (filterCriteria.priceRange) {
+      filteredData = filteredData.filter(
+        (house) =>
+          house.price >= parseFloat(filterCriteria.priceRange.min) &&
+          house.price <= parseFloat(filterCriteria.priceRange.max)
+      );
+    }
+
+    if (filterCriteria.governorate) {
+      filteredData = filteredData.filter(
+        (house) => house.governorate === filterCriteria.governorate
+      );
+    }
+
+    if (filterCriteria.delegation) {
+      filteredData = filteredData.filter(
+        (house) => house.delegation === filterCriteria.delegation
+      );
+    }
+
+    if (filterCriteria.composition) {
+      filteredData = filteredData.filter(
+        (house) => house.composition === filterCriteria.composition
+      );
+    }
+
+    setFilteredHouses(filteredData);
   };
-  
+
+  useEffect(() => {
+    // Update displayedHouses when filteredHouses change
+    setDisplayedHouses(filteredHouses.slice(0, 3));
+    setShowMore(filteredHouses.length > 3);
+  }, [filteredHouses]);
+
+  const handleShowMore = () => {
+    const nextBatch = displayedHouses.length + 3;
+    setDisplayedHouses(filteredHouses.slice(0, nextBatch));
+    setShowMore(nextBatch < filteredHouses.length);
+  };
 
   return (
-    <div
-      style={{
-        width: "90%",
-        margin: "0 auto",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <h1 style={{ textAlign: "center", color: "#333" }}>
-        Filter your future house
-      </h1>
+    <div>
       <FilterComponent onFilter={handleFilter} />
       <h1 style={{ textAlign: "center", color: "#333" }}>
-        Available houses in this moment !
+        Available houses in this moment!
       </h1>
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-around",
+          backgroundColor: "#d8be9678",
         }}
       >
-        {filteredHouses && filteredHouses.length > 0 ? (
-          filteredHouses.map((house) => (
+        {displayedHouses && displayedHouses.length > 0 ? (
+          displayedHouses.map((house) => (
             <HouseCard key={house.id} house={house} />
           ))
         ) : (
@@ -69,6 +81,11 @@ const ResultFilterList = () => {
           </div>
         )}
       </div>
+      {showMore && (
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <button onClick={handleShowMore}>Show More</button>
+        </div>
+      )}
     </div>
   );
 };

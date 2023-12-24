@@ -1,0 +1,44 @@
+.apartment-plan-container {
+  padding: 35px;
+  margin: 0 auto;
+  display: flex;
+  width: 84%;
+  justify-content: space-around;
+  border: 1px solid #f5f0e8;
+  margin-bottom: 100px;
+}
+
+.image-container {
+  margin: 0 auto;
+}
+
+.apartment-image {
+  margin: 20px;
+  padding: 25px;
+  border: 1px solid #f5f0e8;
+  width: 500px;
+  height: auto;
+}
+
+.table-container {
+  margin: 20px;
+  padding: 25px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.plan-table {
+  width: 500px;
+}
+
+.plan-table td {
+  padding: 8px;
+}
+
+.even-row {
+  background-color: #f6f4f1; /* beige */
+}
+
+.odd-row {
+  background-color: #ffffff; /* white */
+}

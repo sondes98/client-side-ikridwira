@@ -1,10 +1,10 @@
 .image-gallery-container {
-    background-color: #d8be9645;
-    width: 83%;
+  box-shadow: 0px 0px 25px 0px #cccccc8f;
+  background-color: #d8be960d;
+  width: 83%;
   margin: 0px auto;
   padding: 16px;
 }
-
 .image-card {
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
@@ -20,9 +20,9 @@
   transform: scale(1.1);
 }
 .modal-image:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
 /* Image Card */
 .image-card {

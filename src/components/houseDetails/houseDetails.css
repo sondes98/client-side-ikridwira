@@ -4,11 +4,37 @@
   justify-content: space-evenly;
   margin: 10px auto;
   padding: 20px;
+  overflow: hidden;
 }
+
 
 .list-details li {
   list-style: none;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+}
+.animated-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .list-details li:hover {
   transform: scale(1.1);
@@ -22,20 +48,20 @@
 }
 
 .list-details li h6 {
+  font-weight: 500;
+  margin: 47px 2px 0px 6px;
   color: #8a5911;
-  font-size: 14px;
-  width: 91px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-family: "Teko";
+  letter-spacing: 1px;
 }
 
 .list-details li h5 {
-  margin: 5px;
+  margin: 13px 5px 13px 21px;
+  font-family: "Teko";
   color: #b3b1ae;
-  padding: 5px;
-  /* width: 155px; */
-  text-align: start;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 29px;
+  font-weight: 400;
 }

@@ -1,6 +1,11 @@
 body {
   overflow-x: hidden;
   width: 102%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
 
+}
+
+label {
+  letter-spacing: 2px;
+  font-size: 24px;
 }

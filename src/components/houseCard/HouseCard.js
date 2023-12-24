@@ -49,8 +49,20 @@ const HouseCard = ({ house }) => {
               }}
             >
               {" "}
-              <img width="37px" height="30px" src={priceImage} />
-              <h5> {price}dnt</h5>
+              <img alt="icon" width="37px" height="30px" src={priceImage} />
+              <h5
+                style={{
+                  margin: "1px 1px 1px 1px",
+                  fontSize: "19px",
+                  fontFamily: '"Teko"',
+                  width: "118px",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                }}
+              >
+                {" "}
+                {price}dnt
+              </h5>
             </Typography>
             <Typography
               variant="body2"
@@ -61,12 +73,35 @@ const HouseCard = ({ house }) => {
                 height="30px"
                 src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/0333.png"
               />
-              <h5>{governorate},{delegation}</h5>
+              <h5
+                style={{
+                  margin: "1px 1px 1px 1px",
+                  fontSize: "19px",
+                  fontFamily: '"Teko"',
+                  width: "118px",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                }}
+              >
+                {governorate},{delegation}
+              </h5>
             </Typography>
           </div>
 
           <Typography variant="body2">
-            <h5 style={{textAlign:"center"}}> Composition {composition}</h5>
+            <h5
+              style={{
+                textAlign: "center",
+                margin: "1px 1px 1px 1px",
+                fontSize: "19px",
+                fontFamily: '"Teko"',
+                fontWeight: "400",
+                letterSpacing: "2px",
+              }}
+            >
+              {" "}
+              Composition {composition}
+            </h5>
             <div
               style={{
                 display: "flex",
@@ -75,15 +110,10 @@ const HouseCard = ({ house }) => {
                 borderTop: "1px solid rgb(221, 221, 221)",
               }}
             >
-              <img src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/1618271.png" />
-              <div
-                style={{
-                  height: "70px", // Adjust the height of the separator line
-                  borderLeft: "1px solid rgb(221, 221, 221)", // Separator line style
-                  margin: "4px",
-                }}
+              <img
+                alt="icon"
+                src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/1618271.png"
               />
-              <img src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/259973.png" />
               <div
                 style={{
                   height: "70px", // Adjust the height of the separator line
@@ -92,6 +122,18 @@ const HouseCard = ({ house }) => {
                 }}
               />
               <img
+                alt="icon"
+                src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/259973.png"
+              />
+              <div
+                style={{
+                  height: "70px", // Adjust the height of the separator line
+                  borderLeft: "1px solid rgb(221, 221, 221)", // Separator line style
+                  margin: "4px",
+                }}
+              />
+              <img
+                alt="icon"
                 src="https://themesflat.com/alipeskit/wp-content/uploads/2023/08/3139642-1.png"
                 style={{ margin: "4px" }}
               />

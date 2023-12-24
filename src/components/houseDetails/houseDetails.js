@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./houseDetails.css";
 
 const HouseDetails = ({ details }) => {
   const { surface, location, bedroom, kitchen, livingRoom, terrace, bathroom } =
     details;
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   const backgroundStyle = {
     height: "172px",
@@ -19,9 +23,12 @@ const HouseDetails = ({ details }) => {
   };
 
   return (
-    <div className="house-details" style={backgroundStyle}>
+    <div
+      className={`house-details ${isVisible ? "animate" : ""}`}
+      style={backgroundStyle}
+    >
       <ul className="list-details">
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -34,7 +41,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>Surface</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -47,7 +54,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>Location</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             <img
               style={{ margin: "20px", width: "60px", height: "60px" }}
@@ -59,7 +66,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>bedroom</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -72,7 +79,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>kitchen</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -85,7 +92,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>living Room</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -98,7 +105,7 @@ const HouseDetails = ({ details }) => {
 
           <h5>terrace</h5>
         </li>
-        <li>
+        <li className={`animated-element ${isVisible ? "slide-in" : ""}`}>
           <div className="sub-list">
             {" "}
             <img
@@ -108,7 +115,6 @@ const HouseDetails = ({ details }) => {
             />{" "}
             <h6> {bathroom}</h6>
           </div>
-
           <h5>bathroom</h5>
         </li>
       </ul>
