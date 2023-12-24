@@ -153,6 +153,8 @@ const ImageGallery = () => {
                   onClick={navigateToNextImage}
                   className="arrow-button"
                   style={{ marginTop: "250px" }}
+
+                  
                 >
                   <ArrowForwardIosSharpIcon />
                 </IconButton>

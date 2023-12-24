@@ -1,9 +1,9 @@
 import React from "react";
-import ImageGallery from "../../components/imageHolder/imageGallery";
+import ImageGallery from "../../components/imageHolder/ImageGallery";
 import "./HousePage.css";
-import HouseDetails from "../../components/houseDetails/houseDetails";
-import ApartmentPlan from "../../components/houseDetails/apartmentPlan";
-import HouseVideo from "../../components/houseDetails/houseVideo";
+import HouseDetails from "../../components/houseDetails/HouseDetails";
+import ApartmentPlan from "../../components/houseDetails/ApartmentPlan";
+import HouseVideo from "../../components/houseDetails/HouseVideo";
 import Layout from "../../components/laytout";
 
 

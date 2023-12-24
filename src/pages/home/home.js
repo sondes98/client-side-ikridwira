@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from '../../components/header/header';
+import { Header } from '../../components/header/Header';
 import  { ResidanceCarousel } from '../../components/carousel/carousel';
 import { AppartementSection } from '../../containers/appartementSection';
 import AnnouceContainer from '../../containers/annouceContainer';

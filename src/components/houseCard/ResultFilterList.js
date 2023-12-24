@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HouseCard from "./houseCard";
+import HouseCard from "./HouseCard";
 import FilterComponent from "../filter component/filterComponent";
 import jsonData from "../../data.json";
 
