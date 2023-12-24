@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import HouseCard from "./HouseCard";
+import HouseCard from "./houseCard";
 import jsonData from "../../data.json"; // Import the JSON data
 
 export const HouseCardList = () => {

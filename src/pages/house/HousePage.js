@@ -1,5 +1,5 @@
 import React from "react";
-import ImageGallery from "../../components/imageHolder/ImageGallery";
+import ImageGallery from "../../components/imageHolder/imageGallery";
 import "./HousePage.css";
 import HouseDetails from "../../components/houseDetails/houseDetails";
 import ApartmentPlan from "../../components/houseDetails/apartmentPlan";

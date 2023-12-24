@@ -1,6 +1,6 @@
 import React from 'react'
 import "./containers.css"
-import HouseCardList from '../components/houseCard/HouseCardList'
+import HouseCardList from '../components/houseCard/houseCardList'
 
 export const AppartementSection = () => {
   return (

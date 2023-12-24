@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from '../../components/header/header';
-import  { ResidanceCarousel } from '../../components/carousel/Carousel';
-import { AppartementSection } from '../../containers/AppartementSection';
+import  { ResidanceCarousel } from '../../components/carousel/carousel';
+import { AppartementSection } from '../../containers/appartementSection';
 import AnnouceContainer from '../../containers/annouceContainer';
 import FooterSection from '../../containers/footerSection';
 
