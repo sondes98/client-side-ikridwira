@@ -6,6 +6,7 @@ import fakeData from "./fakeData";
 import Announce from "./pages/announce/Announce";
 import HousePage from "./pages/house/HousePage";
 import Home from "./pages/home/home";
+import OpenHouse from "./pages/OpenHouse";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/announceS" element={<Announce />} />
         <Route path="/housePage/:id" element={<HousePage />} />
         <Route path="/map" element={<HouseMap houses={fakeData} />} />
+        <Route path="/openhouse" element={<OpenHouse />} />
       </Routes>
     </HashRouter>
   );

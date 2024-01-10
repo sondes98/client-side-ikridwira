@@ -36,19 +36,19 @@ const RCarousel = () => {
         <div className="silde1">
           <img src={residance1} className="slide1" alt="1" />
           <h1 className="slider-text" style={h1Styles}>
-            ikri dwira
+             dwira
           </h1>
         </div>
         <div className="silde1">
           <img src={residance2} className="slide1" alt="2" />
           <h1 className="slider-text" style={h1Styles}>
-            ikri dwira
+           dwira
           </h1>
         </div>
         <div className="silde1">
           <img src={residance3} className="slide1" alt="3" />
           <h1 className="slider-text" style={h1Styles}>
-            ikri dwira
+            dwira
           </h1>
         </div>
       </Carousel>
