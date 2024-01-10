@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import fakeData from "./fakeData";
-import Announce from "./pages/announce/Announce";
+import Announce from "./pages/announce/announce";
 import HousePage from "./pages/house/HousePage";
 import Home from "./pages/home/home";
 import OpenHouse from "./pages/OpenHouse";

@@ -1,7 +1,7 @@
 import React from "react";
 import ResultFilterList from "../../components/houseCard/ResultFilterList";
 import Layout from "../../components/Layout";
-import "./Announce.css";
+import "./announce.css";
 
 const Announce = () => {
   return (
